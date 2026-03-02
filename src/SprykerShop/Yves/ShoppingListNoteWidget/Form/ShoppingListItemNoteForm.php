@@ -36,11 +36,6 @@ class ShoppingListItemNoteForm extends ShoppingListItemNoteFormType
         $this->addNoteField($builder);
     }
 
-    /**
-     * @param \Symfony\Component\Form\FormBuilderInterface $builder
-     *
-     * @return void
-     */
     protected function addNoteField(FormBuilderInterface $builder): void
     {
         $builder->add(
@@ -49,9 +44,6 @@ class ShoppingListItemNoteForm extends ShoppingListItemNoteFormType
         );
     }
 
-    /**
-     * @return string
-     */
     public function getTemplatePath(): string
     {
         return static::TEMPLATE_PATH;

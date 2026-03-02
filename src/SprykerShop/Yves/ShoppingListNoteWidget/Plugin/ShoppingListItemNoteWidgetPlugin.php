@@ -17,11 +17,6 @@ use SprykerShop\Yves\ShoppingListPage\Plugin\ShoppingListItemNoteWidgetPluginInt
  */
 class ShoppingListItemNoteWidgetPlugin extends AbstractWidgetPlugin implements ShoppingListItemNoteWidgetPluginInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\ShoppingListItemTransfer $shoppingListItemTransfer
-     *
-     * @return void
-     */
     public function initialize(ShoppingListItemTransfer $shoppingListItemTransfer): void
     {
         $widget = new ShoppingListItemNoteWidget($shoppingListItemTransfer);

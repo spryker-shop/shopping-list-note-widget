@@ -12,25 +12,16 @@ use Spryker\Yves\Kernel\Widget\AbstractWidget;
 
 class ShoppingListItemNoteWidget extends AbstractWidget
 {
-    /**
-     * @param \Generated\Shared\Transfer\ShoppingListItemTransfer $shoppingListItemTransfer
-     */
     public function __construct(ShoppingListItemTransfer $shoppingListItemTransfer)
     {
         $this->addParameter('note', $shoppingListItemTransfer->getShoppingListItemNote()->getNote());
     }
 
-    /**
-     * @return string
-     */
     public static function getTemplate(): string
     {
         return '@ShoppingListNoteWidget/views/shopping-list-item-note/shopping-list-item-note.twig';
     }
 
-    /**
-     * @return string
-     */
     public static function getName(): string
     {
         return 'ShoppingListItemNoteWidget';

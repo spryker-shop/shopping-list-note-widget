@@ -13,9 +13,6 @@ use Symfony\Component\Form\FormView;
 
 abstract class ShoppingListItemNoteFormType extends AbstractType
 {
-    /**
-     * @return string
-     */
     abstract public function getTemplatePath(): string;
 
     /**
