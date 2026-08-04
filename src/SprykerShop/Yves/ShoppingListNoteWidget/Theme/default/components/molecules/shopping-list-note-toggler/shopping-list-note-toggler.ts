@@ -6,7 +6,7 @@ export default class ShoppingListNoteToggler extends Component {
     hiddenClass: string;
     noteTextarea: HTMLFormElement;
 
-    protected readyCallback(): void {
+    protected init(): void {
         this.button = <HTMLFormElement>this.getElementsByClassName(`${this.jsName}__button`)[0];
         this.noteTextFieldWrapper = <HTMLFormElement>this.getElementsByClassName(`${this.jsName}__wrapper`)[0];
         this.noteTextarea = <HTMLFormElement>this.getElementsByClassName(`${this.jsName}__note-textarea`)[0];
